@@ -14,6 +14,14 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app needs access to your camera in order to take photos of your favorite places."
+        }
+      ]
+    ],
     "ios": {
       "supportsTablet": true
     },
@@ -21,10 +29,19 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "android.permission.RECORD_AUDIO"
+      ],
+      "package": "com.vien060604.Navigation"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "bad414eb-3dd8-4cbc-8b5e-ed631d7320da"
+      }
     }
   }
 }
